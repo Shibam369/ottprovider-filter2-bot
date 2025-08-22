@@ -116,7 +116,7 @@ User - {}"""
 ⭐ Rating: {rating} / 10</b>
 """
 
-    FILE_CAPTION = """"""`{file_name}`\n\n<blockquote>#𝙊𝙏𝙏𝙋𝙧𝙤𝙫𝙞𝙙𝙚𝙧 – 𝘔𝘰𝘴𝘵 𝘛𝘳𝘶𝘴𝘵𝘦𝘥 𝘗𝘳𝘦𝘮𝘪𝘶𝘮 𝘔𝘰𝘷𝘪𝘦𝘴 𝘈𝘯𝘥 𝘞𝘦𝘣 𝘚𝘦𝘳𝘪𝘦𝘴 𝘌𝘯𝘵𝘦𝘳𝘵𝘢𝘪𝘯𝘮𝘦𝘯𝘵 𝘕𝘦𝘵𝘸𝘰𝘳𝘬 𝘖𝘯 𝘛𝘦𝘭𝘦𝘨𝘳𝘢𝘮.</blockquote>\n\n<b><i>⏤͟͞𝗝⌡𝗼𝗶𝗻 𝗣𝗿𝗲𝗺𝗶𝘂𝗺  – </i>「 @OTTProvider 」</b>"""
+    FILE_CAPTION = """`{file_name}`\n\n<blockquote>#𝙊𝙏𝙏𝙋𝙧𝙤𝙫𝙞𝙙𝙚𝙧 – 𝘔𝘰𝘴𝘵 𝘛𝘳𝘶𝘴𝘵𝘦𝘥 𝘗𝘳𝘦𝘮𝘪𝘶𝘮 𝘔𝘰𝘷𝘪𝘦𝘴 𝘈𝘯𝘥 𝘞𝘦𝘣 𝘚𝘦𝘳𝘪𝘦𝘴 𝘌𝘯𝘵𝘦𝘳𝘵𝘢𝘪𝘯𝘮𝘦𝘯𝘵 𝘕𝘦𝘵𝘸𝘰𝘳𝘬 𝘖𝘯 𝘛𝘦𝘭𝘦𝘨𝘳𝘢𝘮.</blockquote>\n\n<b><i>⏤͟͞𝗝⌡𝗼𝗶𝗻 𝗣𝗿𝗲𝗺𝗶𝘂𝗺  – </i>「 @OTTProvider 」</b>"""
     
 
     ALRT_TXT = """𝖳𝗁𝗂𝗌 𝗂𝗌 𝗇𝗈𝗍 𝗒𝗈𝗎𝗋 𝗆𝗈𝗏𝗂𝖾 𝗋𝖾𝗊𝗎𝖾𝗌𝗍,
@@ -425,4 +425,5 @@ developer : Mr.Jisshu
 ʙʏ /details ᴄᴏᴍᴍᴀɴᴅ
 </blockquote>
 Iғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ᴅᴏᴜʙᴛs ᴘʟᴇᴀsᴇ <a href="https://t.me/IM_JISSHU">ᴄᴏɴᴛᴀᴄᴛ</a> ᴍʏ <a href="https://t.me/IM_JISSHU">ᴀᴅᴍɪɴ</a></b>"""
+
 
