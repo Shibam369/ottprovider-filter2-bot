@@ -811,17 +811,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     elif query.data == "start":
         buttons = [[
-                InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
-                ],[
-                InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='broze'),
-                InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
-                ],[
-                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
-                InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
-                ],[
-                InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                InlineKeyboardButton('rules', callback_data="rules")
-                ]] 
+                            InlineKeyboardButton('Update Channel', url='https://t.me/OTTProvider')
+                            ],[
+                            InlineKeyboardButton('Rules', callback_data='free'),
+                            InlineKeyboardButton('About', callback_data=f'about')
+                            ],
+                            [
+                            InlineKeyboardButton('✨ 𝖡𝗎𝗒 P𝗋𝖾𝗆𝗂𝗎𝗆 : 𝖱𝖾𝗆𝗈𝗏𝖾 𝖠𝖽𝗌 ✨', callback_data='broze')
+                            ],
+                            [
+                            InlineKeyboardButton('⏳ 5-𝖬𝗂𝗇 𝖥𝗋𝖾𝖾 𝖳𝗋𝗂𝖺𝗅 ⏳', callback_data='give_trial')
+                            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, get_status(), query.from_user.id),
@@ -845,12 +845,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	)
     elif query.data == "free":
         buttons = [[
-            InlineKeyboardButton('☆📸 𝙎𝙚𝙣𝙙 𝙨𝙘𝙧𝙚𝙚𝙣𝙨𝙝𝙤𝙩 📸☆', url=f'https://t.me/innocent_babe_dead')
-        ],[
-            InlineKeyboardButton('💎 𝗖𝘂𝘀𝘁𝗼𝗺 𝗣𝗹𝗮𝗻 💎', callback_data='other')
-        ],[
-            InlineKeyboardButton('• 𝗕𝗮𝗰𝗸 •', callback_data='broze'),
-            InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
+            InlineKeyboardButton('𝖢𝗅𝗈𝗌𝖾', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)             
         await client.edit_message_media(
@@ -1672,6 +1667,7 @@ async def advantage_spell_chok(message):
         await message.delete()
     except:
         pass
+
 
 
 
