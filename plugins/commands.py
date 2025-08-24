@@ -177,7 +177,7 @@ async def start(client:Client, message):
                         buttons = [[
                             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
+                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='free'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
@@ -206,7 +206,7 @@ async def start(client:Client, message):
         buttons = [[
                             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
+                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='free'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
@@ -268,7 +268,7 @@ async def start(client:Client, message):
         buttons = [[
             InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                         ],[
-                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
+                            InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='free'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
                             InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
@@ -1057,6 +1057,7 @@ async def verifyon(bot, message):
     
     await save_group_settings(grpid, 'is_verify', True)
     return await message.reply_text("Verification successfully enabled.")
+
 
 
 
