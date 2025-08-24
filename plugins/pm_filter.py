@@ -820,7 +820,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                 ],[
                 InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                InlineKeyboardButton('rules', callback_data="rules")
                 ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -863,6 +863,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )   
+
+	elif query.data == "rules":
+        buttons = [[
+            InlineKeyboardButton('Back', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+             text=script.RULES_TEXT,
+             reply_markup=reply_markup,
+             parse_mode=enums.ParseMode.HTML
+         )
+	
     #jisshu
     elif query.data == "broze":
        buttons = [[
@@ -1660,3 +1672,4 @@ async def advantage_spell_chok(message):
         await message.delete()
     except:
         pass
+
