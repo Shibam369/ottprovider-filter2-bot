@@ -864,7 +864,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )   
 
-	elif query.data == "rules":
+    elif query.data == "rules":
         buttons = [[
             InlineKeyboardButton('Back', callback_data='start')
         ]]
@@ -1672,4 +1672,5 @@ async def advantage_spell_chok(message):
         await message.delete()
     except:
         pass
+
 
