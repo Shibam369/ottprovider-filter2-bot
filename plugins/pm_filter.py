@@ -816,7 +816,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                 ],[
-                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
+                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
                 InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                 ],[
                 InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
@@ -878,7 +878,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     #jisshu
     elif query.data == "broze":
        buttons = [[
-            InlineKeyboardButton('🍁 𝗖𝗹𝗶𝗰𝗸 𝗔𝗹𝗹 𝗣𝗹𝗮𝗻𝘀 & 𝗣𝗿𝗶𝗰𝗲𝘀 🍁', callback_data='free')
+            InlineKeyboardButton('🧑‍💻  𝖢𝗈𝗇𝗍𝖺𝖼𝗍  𝖠𝖽𝗆𝗂𝗇', url='https://t.me/LordShibam')
         ], [
             InlineKeyboardButton('• 𝗖𝗹𝗼𝘀𝗲 •', callback_data='close_data')
        ]]
@@ -1672,6 +1672,7 @@ async def advantage_spell_chok(message):
         await message.delete()
     except:
         pass
+
 
 
 
