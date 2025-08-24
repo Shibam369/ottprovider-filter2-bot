@@ -180,7 +180,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
+                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                         ],[
                             InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
@@ -209,7 +209,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
+                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                         ],[
                             InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
@@ -271,7 +271,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='admincmd'),
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ],[
-                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
+                            InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='broze'),
                             InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
                         ],[
                             InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
@@ -307,7 +307,7 @@ async def start(client:Client, message):
                 InlineKeyboardButton(text="✅ ᴠᴇʀɪғʏ ✅", url=verify),
                 InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ❓", url=settings['tutorial'])
                 ],[
-                InlineKeyboardButton(text="😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='seeplans'),
+                InlineKeyboardButton(text="😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='broze'),
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if await db.user_verified(user_id): 
@@ -1057,6 +1057,7 @@ async def verifyon(bot, message):
     
     await save_group_settings(grpid, 'is_verify', True)
     return await message.reply_text("Verification successfully enabled.")
+
 
 
 
