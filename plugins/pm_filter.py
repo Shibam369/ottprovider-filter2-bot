@@ -864,16 +864,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )   
 
-    elif query.data == "rules":
-        buttons = [[
-            InlineKeyboardButton('Back', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
+    elif query.data == 'rules':
         await query.message.edit_text(
-             text=script.RULES_TEXT,
-             reply_markup=reply_markup,
-             parse_mode=enums.ParseMode.HTML
-         )
+            script.RULES_TEXT,
+            reply_markup = InlineKeyboardMarkup(
+                [[
+			InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='start')
+		]]
+                ),
+            disable_web_page_preview = True
+	)
 	
     #jisshu
     elif query.data == "broze":
@@ -1672,5 +1672,6 @@ async def advantage_spell_chok(message):
         await message.delete()
     except:
         pass
+
 
 
