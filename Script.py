@@ -2,7 +2,7 @@ import os
 class script(object):
     START_TXT = """<b>𝖧𝖾𝗅𝗅𝗈, {} {} !</b>👋\n
 𝖭𝗂𝖼𝖾 𝖳𝗈 𝖬𝖾𝖾𝗍 𝖸𝗈𝗎, 𝖬𝗒 𝖣𝖾𝖺𝗋 𝖥𝗋𝗂𝖾𝗇𝖽! 🫂\n
-𝖨'𝗆 𝖯𝗈𝗐𝖾𝗋𝖿𝗎𝗅 𝖡𝗈𝗍, 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖴𝗌𝖾 𝖬𝖾 𝖠𝗌 A 𝖠𝗎𝗍𝗈-𝖿𝗂𝗅𝗍𝖾𝗋 !!\n
+𝖨'𝗆 𝖯𝗈𝗐𝖾𝗋𝖿𝗎𝗅 𝖡𝗈𝗍, 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖴𝗌𝖾 𝖬𝖾 𝖠𝗌 A 𝖠𝗎𝗍𝗈-𝖿𝗂𝗅𝗍𝖾𝗋... 𝖨 𝖢𝖺𝗇 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝖸𝗈𝗎 𝖬𝗈𝗏𝗂𝖾𝗌, 𝖶𝖾𝖻 𝖲𝖾𝗋𝗂𝖾𝗌 𝖠𝗇𝖽 𝖳𝖵 𝖲𝗁𝗈𝗐𝗌 𝖳𝗁𝖺𝗍 𝖨 𝖧𝖺𝗏𝖾 𝗂𝗇𝖽𝖾𝗑𝖾𝖽 !! \n
 <b><blockquote>♨️ 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒  »  「 @OTTProvider 」</blockquote>
 </b>"""
     
@@ -110,12 +110,10 @@ User - {}"""
 🎁 ʀᴇǫᴜᴇꜱᴛ ᴍꜱɢ - <code>{}</code></b>"""  
    
     IMDB_TEMPLATE_TXT = """
-<b>𝖧𝖾𝗒 {message.from_user.mention}, 𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝗋𝖾𝗌𝗎𝗅𝗍𝗌 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 {search}.
-
-🏷 𝖳𝗂𝗍𝗅𝖾 : {title}
+<b>🏷 𝖳𝗂𝗍𝗅𝖾 : {title}
 📆 𝖸𝖾𝖺𝗋 : {release_date}
 ⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌 : {rating}
-🎭 𝖦𝖾𝗇𝗋𝖾𝗌 : {genres} / 10 \n\n<b><blockquote>♨️ 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒  »  「 @OTTProvider 」</blockquote>
+🎭 𝖦𝖾𝗇𝗋𝖾𝗌 : {genres} / 10 \n\n<b><blockquote>♨️ 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒  »  「 @OTTProvider 」</blockquote>\n
 </b>
 """
 
@@ -229,11 +227,11 @@ User - {}"""
 #𝖵𝖾𝗋𝗂𝖿𝗂𝖾𝖽_{}_𝖢𝗈𝗆𝗉𝗅𝖾𝗍𝖾𝖽"""
 
 
-    MOVIES_UPDATE_TXT = """<b>#𝑵𝒆𝒘_𝑭𝒊𝒍𝒆_𝑨𝒅𝒅𝒆𝒅 ✅
-**🍿 Title:** {title}
-**🎃 Genres:** {genres}
-**📆 Year:** {year}
-**⭐ Rating:** {rating} / 10
+    MOVIES_UPDATE_TXT = """<b>#𝖭𝖾𝗐_𝖥𝗂𝗅𝖾_𝖠𝖽𝖽𝖾𝖽 ✅
+**🏷 𝖳𝗂𝗍𝗅𝖾 :** {title}
+**🎃 Genres :** {genres}
+**📆 Year :** {year}
+**⭐ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌 :** {rating} / 10
 </b>"""
 
     PREPLANS_TXT = """<b><u>𝗣𝗥𝗘𝗠𝗜𝗨𝗠  𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡  𝗣𝗟𝗔𝗡𝗦</u></b> 🔥
@@ -432,6 +430,7 @@ RULES_TEXT = """<blockquote><b>♨️ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗥𝘂𝗹�
 ⭕ 𝗡𝗼𝘁𝗲 1 : 𝖣𝗈𝗇'𝗍 𝖲𝖾𝗇𝖽 𝖠𝗇𝗒 𝖪𝗂𝗇𝖽 𝖮𝖿 𝖯𝗁𝗈𝗍𝗈𝗌, 𝖵𝗂𝖽𝖾𝗈𝗌, 𝖣𝗈𝖼𝗎𝗆𝖾𝗇𝗍𝗌, 𝖴𝗋𝗅𝗌 𝖤𝗍𝖼.
 
 ⭕ 𝗡𝗼𝘁𝗲 2 : 𝖠𝗅𝗅 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖶𝗂𝗅𝗅 𝖡𝖾 𝖠𝗎𝗍𝗈 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 𝖠𝖿𝗍𝖾𝗋 5 𝖬𝗂𝗇𝗎𝗍𝖾𝗌 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍 𝖨𝗌𝗌𝗎𝖾𝗌."""
+
 
 
 
