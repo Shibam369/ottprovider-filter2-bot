@@ -1430,7 +1430,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
         search = message.text
         chat_id = message.chat.id
         settings = await get_settings(chat_id , pm_mode=pm_mode)
-        searching_msg = await msg.reply_text(f'<b><i>𝖲𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀 𝖿𝗈𝗋 : </i>{search} 🔎</b>')
+        searching_msg = await msg.reply_text(f'🔍 <b><i>𝖲𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀... </i>{search}</b>')
         files, offset, total_results = await get_search_results(search)
         await searching_msg.delete()
         if not files:
@@ -1663,6 +1663,7 @@ async def advantage_spell_chok(message):
         await message.delete()
     except:
         pass
+
 
 
 
