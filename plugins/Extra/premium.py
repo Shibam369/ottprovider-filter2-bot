@@ -27,12 +27,12 @@ async def give_premium_cmd_handler(client, message):
             await db.update_user(user_data)  # Use the update_user method to update or insert user data
             await message.reply_text(f"ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴛᴏ ᴛʜᴇ ᴜꜱᴇʀꜱ.\n👤 ᴜꜱᴇʀ ɴᴀᴍᴇ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : {user.id}\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : {time}")
             time_zone = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
-            current_time = time_zone.strftime("%d-%m-%Y\n⏱️ ᴊᴏɪɴɪɴɢ ᴛɪᴍᴇ : %I:%M:%S %p")            
+            current_time = time_zone.strftime("%d-%m-%Y\n›  𝖩𝗈𝗂𝗇𝗂𝗇𝗀 𝖣𝖺𝗍𝖾 : %I:%M:%S %p")            
             expiry = expiry_time   
-            expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ : %I:%M:%S %p")  
+            expiry_str_in_ist = expiry.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y\n›  𝖤𝗑𝗉𝗂𝗋𝗒 𝖳𝗂𝗆𝖾 : %I:%M:%S %p")  
             await client.send_message(
                 chat_id=user_id,
-                text=f"ᴘʀᴇᴍɪᴜᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ꜰᴏʀ {time} ᴇɴᴊᴏʏ 😀\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}",                
+                text=f"<b>𝖯𝗋𝖾𝗆𝗂𝗎𝗆 𝖲𝗎𝖻𝗌𝖼𝗋𝗂𝗉𝗍𝗂𝗈𝗇 𝖠𝖼𝗍𝗂𝗏𝖺𝗍𝖾𝖽</b> ✅\n\n〇 𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇  :  {time} \n\n›  𝖩𝗈𝗂𝗇𝗂𝗇𝗀 𝖣𝖺𝗍𝖾 : {current_time}\n\n›  𝖤𝗑𝗉𝗂𝗋𝗒 𝖣𝖺𝗍𝖾 : {expiry_str_in_ist}\n\n𝖤𝗇𝗃𝗈𝗒 𝗍𝗁𝖾 𝖺𝖽-𝖿𝗋𝖾𝖾 𝖾𝗑𝗉𝖾𝗋𝗂𝖾𝗇𝖼𝖾 𝖿𝗋𝗈𝗆 𝗇𝗈𝗐 🔥",                
             )
             #user = await client.get_users(user_id)
             await client.send_message(LOG_CHANNEL, text=f"#Added_Premium\n\n👤 ᴜꜱᴇʀ : {user.mention}\n⚡ ᴜꜱᴇʀ ɪᴅ : {user.id}\n⏰ ᴘʀᴇᴍɪᴜᴍ ᴀᴄᴄᴇꜱꜱ : {time}\n\n⏳ ᴊᴏɪɴɪɴɢ ᴅᴀᴛᴇ : {current_time}\n\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", disable_web_page_preview=True)
@@ -55,14 +55,14 @@ async def check_plans_cmd(client, message):
         expiry_time = remaining_time + datetime.datetime.now()
         expiry_date = expiry_time.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%d-%m-%Y")
         expiry_time = expiry_time.astimezone(pytz.timezone("Asia/Kolkata")).strftime("%I:%M:%S %p")  # Format time in IST (12-hour format)
-        await message.reply_text(f"📝 <u>ʏᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ᴅᴇᴛᴀɪʟꜱ</u> :\n\n👤 ᴜꜱᴇʀ ɴᴀᴍᴇ : {user}\n🏷️ ᴜꜱᴇʀ ɪᴅ : <code>{user_id}</code>\n⏱️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_date}\n⏱️ ᴇxᴘɪʀʏ ᴛɪᴍᴇ : {expiry_time}\n⏳ ʀᴇᴍᴀɪɴɪɴɢ ᴛɪᴍᴇ : {formatted_remaining_time}")
+        await message.reply_text(f"𝖤𝗇𝗃𝗈𝗒 𝗍𝗁𝖾 𝖺𝖽-𝖿𝗋𝖾𝖾 𝖾𝗑𝗉𝖾𝗋𝗂𝖾𝗇𝖼𝖾 𝖿𝗋𝗈𝗆 𝗇𝗈𝗐 🔥\n\n›  𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : {user}\n ›  𝖴𝗌𝖾𝗋 𝖨𝖣: <code>{user_id}</code>\n›  𝖤𝗑𝗉𝗂𝗋𝗒 𝖣𝖺𝗍𝖾 : {expiry_date}\n›  𝖤𝗑𝗉𝗂𝗋𝗒 𝖳𝗂𝗆𝖾 : {expiry_time}\n›  𝖱𝖾𝗆𝖺𝗂𝗇𝗂𝗇𝗀 𝖳𝗂𝗆𝖾 : {formatted_remaining_time}")
     else:
         btn = [ 
-            [InlineKeyboardButton("ɢᴇᴛ ꜰʀᴇᴇ ᴛʀᴀɪʟ ꜰᴏʀ 𝟻 ᴍɪɴᴜᴛᴇꜱ ☺️", callback_data="give_trial")],
-            [InlineKeyboardButton("ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅs", callback_data="seeplans")],
+            [InlineKeyboardButton("⏳ 5-𝖬𝗂𝗇 𝖥𝗋𝖾𝖾 𝖳𝗋𝗂𝖺𝗅 ⏳", callback_data="give_trial")],
+            [InlineKeyboardButton("✨ 𝖡𝗎𝗒 P𝗋𝖾𝗆𝗂𝗎𝗆 : 𝖱𝖾𝗆𝗈𝗏𝖾 𝖠𝖽𝗌 ✨", callback_data="broze")],
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        await message.reply_text(f"😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴇᴍɪᴜᴍ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ. ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ.\n\nᴛᴏ ᴜꜱᴇ ᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ ꜰᴏʀ 5 ᴍɪɴᴜᴛᴇꜱ ᴄʟɪᴄᴋ ᴏɴ ꜰʀᴇᴇ ᴛʀᴀɪʟ ʙᴜᴛᴛᴏɴ.",reply_markup=reply_markup)
+        await message.reply_text(f"You Don’t Have Any Premium Subscription...\nIf You Want To Buy Premium, Click On The Button Below",reply_markup=reply_markup)
 
 
 @Client.on_message(filters.command("remove_premium"))
@@ -78,7 +78,7 @@ async def remove_premium(client, message):
             await message.reply_text("ᴜꜱᴇʀ ʀᴇᴍᴏᴠᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ !")
             await client.send_message(
                 chat_id=user_id,
-                text=f"<b>ʜᴇʏ {user.mention},\n\nʏᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴ ʜᴀꜱ ʙᴇᴇɴ ᴇxᴘɪʀᴇᴅ.\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ᴀɢᴀɪɴ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ /plan ᴛᴏ ᴄʜᴇᴄᴋ ᴏᴜᴛ ᴏᴛʜᴇʀ ᴘʟᴀɴꜱ.</b>"
+                text=f"𝖧𝖾𝗒 {user.mention},\n\nYour premium plan has expired.\n\n𝖨𝖿 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍 𝗍𝗈 𝖻𝗎𝗒 𝗉𝗋𝖾𝗆𝗂𝗎𝗆 𝖺𝗀𝖺𝗂𝗇, 𝖼𝗅𝗂𝖼𝗄 𝗈𝗇 /plan 𝗍𝗈 𝖼𝗁𝖾𝖼𝗄 𝗈𝗎𝗍 𝗈𝗍𝗁𝖾𝗋 𝖺𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝗉𝗅𝖺𝗇𝗌."
             )
         else:
             await message.reply_text("ᴜɴᴀʙʟᴇ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴜꜱᴇʀ !\nᴀʀᴇ ʏᴏᴜ ꜱᴜʀᴇ, ɪᴛ ᴡᴀꜱ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ ɪᴅ ?")
@@ -159,7 +159,7 @@ async def plan(client, message):
     users = message.from_user.mention 
     btn = [[
 	
-        InlineKeyboardButton('🧑‍💻  𝖢𝗈𝗇𝗍𝖺𝖼𝗍  𝖠𝖽𝗆𝗂𝗇  🧑‍💻', url='https://t.me/LordShibam')],[InlineKeyboardButton("𝖢𝗅𝗈𝗌𝖾", callback_data="close_data")
+        InlineKeyboardButton('🧑‍💻  𝖢𝗈𝗇𝗍𝖺𝖼𝗍  𝖠𝖽𝗆𝗂𝗇  🧑‍💻', url='https://t.me/LordShibam')],[InlineKeyboardButton("✘  𝖢𝗅𝗈𝗌𝖾  ✘", callback_data="close_data")
     ]]
     await message.reply_photo(photo="https://graph.org/vTelegraphBot-07-28-35", caption=script.PREPLANS_TXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
     
