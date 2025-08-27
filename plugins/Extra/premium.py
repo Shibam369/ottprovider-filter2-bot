@@ -58,8 +58,8 @@ async def check_plans_cmd(client, message):
         await message.reply_text(f"𝖤𝗇𝗃𝗈𝗒 𝗍𝗁𝖾 𝖺𝖽-𝖿𝗋𝖾𝖾 𝖾𝗑𝗉𝖾𝗋𝗂𝖾𝗇𝖼𝖾 𝖿𝗋𝗈𝗆 𝗇𝗈𝗐 🔥\n\n›  𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : {user}\n ›  𝖴𝗌𝖾𝗋 𝖨𝖣: <code>{user_id}</code>\n›  𝖤𝗑𝗉𝗂𝗋𝗒 𝖣𝖺𝗍𝖾 : {expiry_date}\n›  𝖤𝗑𝗉𝗂𝗋𝗒 𝖳𝗂𝗆𝖾 : {expiry_time}\n›  𝖱𝖾𝗆𝖺𝗂𝗇𝗂𝗇𝗀 𝖳𝗂𝗆𝖾 : {formatted_remaining_time}")
     else:
         btn = [ 
-            [InlineKeyboardButton("⏳ 5-𝖬𝗂𝗇 𝖥𝗋𝖾𝖾 𝖳𝗋𝗂𝖺𝗅 ⏳", callback_data="give_trial")],
             [InlineKeyboardButton("✨ 𝖡𝗎𝗒 P𝗋𝖾𝗆𝗂𝗎𝗆 : 𝖱𝖾𝗆𝗈𝗏𝖾 𝖠𝖽𝗌 ✨", callback_data="broze")],
+            [InlineKeyboardButton("⏳ 5-𝖬𝗂𝗇 𝖥𝗋𝖾𝖾 𝖳𝗋𝗂𝖺𝗅 ⏳", callback_data="give_trial")],
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         await message.reply_text(f"You Don’t Have Any Premium Subscription...\nIf You Want To Buy Premium, Click On The Button Below",reply_markup=reply_markup)
