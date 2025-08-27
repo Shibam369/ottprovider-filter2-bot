@@ -152,7 +152,7 @@ async def start(client:Client, message):
     
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         status = get_status()
-        aks=await message.reply_text(f"<b>🔥 ʏᴇs {status},\nʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ??</b>")
+        aks=await message.reply_text(f"🔥 𝖸𝖾𝗌 {status},\n𝖧𝗈𝗐 𝖢𝖺𝗇 𝖨 𝖧𝖾𝗅𝗉 𝖸𝗈𝗎 ?")
         await asyncio.sleep(600)
         await aks.delete()
         await m.delete()
@@ -1057,6 +1057,7 @@ async def verifyon(bot, message):
     
     await save_group_settings(grpid, 'is_verify', True)
     return await message.reply_text("Verification successfully enabled.")
+
 
 
 
