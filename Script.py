@@ -101,7 +101,8 @@ STATUS_TXT = """<b>📦 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌 𝖥𝗋𝗈�
     NEW_USER_TXT = """#NewUser {}
 
 𝖨𝖽 - <code>{}</code>
-𝖭𝖺𝗆𝖾 - {}"""
+𝖭𝖺𝗆𝖾 - {}
+"""
 
     NEW_GROUP_TXT = """#New_Group {}
 
@@ -110,12 +111,14 @@ Id - <code>{}</code>
 Group username - @{}
 Group link - {}
 Total members - <code>{}</code>
-User - {}"""
+User - {}
+"""
 
     REQUEST_TXT = """<b>📜 ᴜꜱᴇʀ - {}
 📇 ɪᴅ - <code>{}</code>
 
-🎁 ʀᴇǫᴜᴇꜱᴛ ᴍꜱɢ - <code>{}</code></b>"""  
+🎁 ʀᴇǫᴜᴇꜱᴛ ᴍꜱɢ - <code>{}</code></b>
+"""  
    
     IMDB_TEMPLATE_TXT = """
 <b>🏷 𝖳𝗂𝗍𝗅𝖾 : {title}
@@ -438,6 +441,7 @@ RULES_TEXT = """<blockquote><b>♨️ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗥𝘂𝗹�
 ⭕ 𝗡𝗼𝘁𝗲 1 : 𝖣𝗈𝗇'𝗍 𝖲𝖾𝗇𝖽 𝖠𝗇𝗒 𝖪𝗂𝗇𝖽 𝖮𝖿 𝖯𝗁𝗈𝗍𝗈𝗌, 𝖵𝗂𝖽𝖾𝗈𝗌, 𝖣𝗈𝖼𝗎𝗆𝖾𝗇𝗍𝗌, 𝖴𝗋𝗅𝗌 𝖤𝗍𝖼.
 
 ⭕ 𝗡𝗼𝘁𝗲 2 : 𝖠𝗅𝗅 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖶𝗂𝗅𝗅 𝖡𝖾 𝖠𝗎𝗍𝗈 𝖣𝖾𝗅𝖾𝗍𝖾𝖽 𝖠𝖿𝗍𝖾𝗋 5 𝖬𝗂𝗇𝗎𝗍𝖾𝗌 𝖳𝗈 𝖠𝗏𝗈𝗂𝖽 𝖢𝗈𝗉𝗒𝗋𝗂𝗀𝗁𝗍 𝖨𝗌𝗌𝗎𝖾𝗌."""
+
 
 
 
