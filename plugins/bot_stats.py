@@ -113,10 +113,12 @@ async def get_ststs(bot, message):
     # Send stats
     await message.reply_text(
         script.STATUS_TXT.format(
-            total_files,         # total files from all DBs
-            users, groups,       # users database
-            db1_files, db1_used, db1_free,
-            db2_files, db2_used, db2_free,
-            db3_files, db3_used, db3_free
-        )
+            total_files,            # total files from all DBs
+            users, groups,          # users DB stats
+            db1_files, db1_used, db1_free,  # 1st DB stats
+            db2_files, db2_used, db2_free,  # 2nd DB stats
+            db3_files, db3_used, db3_free,  # 3rd DB stats
+            uptime, ram, cpu        # bot stats
+        ),
+        disable_web_page_preview=True
     )
