@@ -28,7 +28,8 @@ instance3 = Instance.from_db(db3)
 # ========================
 # Media Models
 # ========================
-class BaseMedia(Document):
+# Base class for shared fields
+class BaseMedia:
     file_id = fields.StrField(attribute='_id')
     file_ref = fields.StrField(allow_none=True)
     file_name = fields.StrField(required=True)
@@ -37,18 +38,24 @@ class BaseMedia(Document):
     caption = fields.StrField(allow_none=True)
     file_type = fields.StrField(allow_none=True)
 
-    class Meta:
-        indexes = ['file_name']
-        collection_name = COLLECTION_NAME
-
+# DB-specific documents
 @instance1.register
-class MediaDB1(BaseMedia): pass
+class MediaDB1(Document, BaseMedia):
+    class Meta:
+        collection_name = COLLECTION_NAME
+        indexes = ['file_name']
 
 @instance2.register
-class MediaDB2(BaseMedia): pass
+class MediaDB2(Document, BaseMedia):
+    class Meta:
+        collection_name = COLLECTION_NAME
+        indexes = ['file_name']
 
 @instance3.register
-class MediaDB3(BaseMedia): pass
+class MediaDB3(Document, BaseMedia):
+    class Meta:
+        collection_name = COLLECTION_NAME
+        indexes = ['file_name']
 
 # ========================
 # DB Size Helpers
