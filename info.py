@@ -30,9 +30,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "OTTProvider")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #SHIBAM
-FIRST_DB_URI = environ.get('FIRST_DB_URI', "")
-SECOND_DB_URI = environ.get('SECOND_DB_URI', "")
-THIRD_DB_URI = environ.get('THIRD_DB_URI', "")
+FIRST_DB_URI = environ.get('FIRST_DB_URI', "mongodb+srv://rikabi5994:rikabi5994@ottprovider.9w9caor.mongodb.net/?retryWrites=true&w=majority&appName=OTTProvider")
+SECOND_DB_URI = environ.get('SECOND_DB_URI', "mongodb+srv://dirope6499:dirope6499@ottprovider.u87tbxg.mongodb.net/?retryWrites=true&w=majority&appName=OTTProvider")
+THIRD_DB_URI = environ.get('THIRD_DB_URI', "mongodb+srv://cawih99898:cawih99898@ottprovider.b4lls4l.mongodb.net/?retryWrites=true&w=majority&appName=OTTProvider")
 #SHIBAM
 
 
