@@ -85,14 +85,38 @@ async def groups_list(bot, message):
 
 @Client.on_message(filters.command('stats') & filters.user(ADMINS) & filters.incoming)
 async def get_ststs(bot, message):
+    # Users DB stats
     users = await db.total_users_count()
     groups = await db.total_chat_count()
-    size = get_size(await db.get_db_size())
-    free = get_size(536870912)
-    files = await Media.count_documents()
-    db2_size = get_size(await get_files_db_size())
-    db2_free = get_size(536870912)
-    uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - time.time()))
+
+    # Files DB stats
+    total_files = await MediaDB1.count_documents({}) + await MediaDB2.count_documents({}) + await MediaDB3.count_documents({})
+
+    db1_files = await MediaDB1.count_documents({})
+    db2_files = await MediaDB2.count_documents({})
+    db3_files = await MediaDB3.count_documents({})
+
+    db1_used = round((await get_files_db1_size()) / (1024*1024), 2)  # MB
+    db2_used = round((await get_files_db2_size()) / (1024*1024), 2)
+    db3_used = round((await get_files_db3_size()) / (1024*1024), 2)
+
+    # Assuming 512 MB per DB as total space
+    db1_free = round(512 - db1_used, 2)
+    db2_free = round(512 - db2_used, 2)
+    db3_free = round(512 - db3_used, 2)
+
+    # Bot stats
+    uptime = time.strftime("%Hh %Mm %Ss", time.gmtime(time.time() - temp.START_TIME))
     ram = psutil.virtual_memory().percent
     cpu = psutil.cpu_percent()
-    await message.reply_text(script.STATUS_TXT.format(users, groups, size, free, files, db2_size, db2_free, uptime, ram, cpu))
+
+    # Send stats
+    await message.reply_text(
+        script.STATUS_TXT.format(
+            total_files,         # total files from all DBs
+            users, groups,       # users database
+            db1_files, db1_used, db1_free,
+            db2_files, db2_used, db2_free,
+            db3_files, db3_used, db3_free
+        )
+    )
